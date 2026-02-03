@@ -96,7 +96,7 @@ app.config.globalProperties.$myPlugin = {
 }
 
 // TypeScript types
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   export interface ComponentCustomProperties {
     $myPlugin: {
       greet: (name: string) => string
